@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="1076.0" style="-fx-background-color: #ffea00;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aj.Controllers.LoginController">
+    <children>
+        <AnchorPane prefHeight="679.0" prefWidth="530.0" style="-fx-background-color: #F3EEF6;">
+            <children>
+                <AnchorPane layoutX="37.0" layoutY="80.0" prefHeight="517.0" prefWidth="457.0" style="-fx-background-color: FFFFFF; -fx-border-width: 1; -fx-border-color: BLACK; -fx-background-radius: 8; -fx-border-radius: 8;">
+                    <children>
+                        <Label layoutX="191.0" layoutY="72.0" text="Sign in">
+                            <font>
+                                <Font name="Segoe UI Bold" size="22.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="41.0" layoutY="197.0" text="Username">
+                            <font>
+                                <Font name="Segoe UI" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="270.0" text="Password">
+                            <font>
+                                <Font name="Segoe UI" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="usernameTextFIeld" layoutX="41.0" layoutY="216.0" prefHeight="34.0" prefWidth="378.0" promptText="Username" style="-fx-background-insets: 0, 0 0 1 0; -fx-background-color: #b9b9b9, white; -fx-accent: #8A39BF;" />
+                        <Button layoutX="139.0" layoutY="369.0" mnemonicParsing="false" onAction="#submit" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #ffea00;" text="Login">
+                            <font>
+                                <Font name="Segoe UI Bold" size="22.0" />
+                            </font>
+                     <effect>
+                        <DropShadow height="12.0" radius="5.5" width="12.0">
+                           <color>
+                              <Color red="1.0" green="0.9176470637321472" opacity="0.9599999785423279" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                        </Button>
+                        <Hyperlink layoutX="166.0" layoutY="451.0" onAction="#goToSignUp" text="Create an account">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Hyperlink>
+                        <PasswordField fx:id="passwordTextField" layoutX="38.0" layoutY="289.0" prefHeight="34.0" prefWidth="378.0" promptText="Password" style="-fx-background-insets: 0, 0 0 1 0; -fx-background-color: #b9b9b9, white; -fx-accent: #8A39BF;" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <Label layoutX="548.0" layoutY="155.0" text="Ticket">
+            <font>
+                <Font name="Segoe UI Semibold" size="63.0" />
+            </font>
+        </Label>
+        <Label layoutX="634.0" layoutY="247.0" text="Management">
+            <font>
+                <Font name="Segoe UI Semibold" size="63.0" />
+            </font>
+        </Label>
+      <Label layoutX="736.0" layoutY="340.0" text="System.">
+         <font>
+            <Font name="Segoe UI Semibold" size="63.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="1076.0" style="-fx-background-color: #ffea00;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aj.Controllers.signupController">
+    <children>
+        <Label layoutX="365.0" layoutY="294.0" text="Link" textFill="WHITE">
+            <font>
+                <Font name="Segoe UI Semibold" size="63.0" />
+            </font>
+        </Label>
+          <AnchorPane layoutX="184.0" layoutY="71.0" prefHeight="538.0" prefWidth="708.0" style="-fx-background-color: FFFFFF; -fx-border-width: 0; -fx-border-color: CA3939; -fx-background-radius: 20; -fx-border-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0 ,0, 0);">
+              <children>
+                  <Label layoutX="181.0" layoutY="67.0" text="Create an account">
+                      <font>
+                          <Font name="Arial Bold" size="40.0" />
+                      </font>
+                  </Label>
+                  <Label layoutX="219.0" layoutY="167.0" text="Username">
+                      <font>
+                          <Font name="Segoe UI" size="16.0" />
+                      </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField" layoutX="219.0" layoutY="186.0" prefHeight="34.0" prefWidth="271.0" promptText="Your username" style="-fx-background-insets: 0, 0 0 1 0; -fx-background-color: #b9b9b9, white; -fx-accent: #8A39BF;" />
+                  <Label layoutX="220.0" layoutY="256.0" text="Password">
+                      <font>
+                          <Font name="Segoe UI" size="16.0" />
+                      </font>
+                  </Label>
+                  <Button layoutX="279.0" layoutY="367.0" mnemonicParsing="false" onAction="#submit" prefHeight="58.0" prefWidth="150.0" style="-fx-background-color: #ffea00;" text="Register">
+                      <font>
+                          <Font name="Segoe UI Bold" size="22.0" />
+                      </font>
+                  </Button>
+                  <PasswordField fx:id="passwordTextField" layoutX="219.0" layoutY="275.0" prefHeight="34.0" prefWidth="271.0" promptText="Your password" style="-fx-background-insets: 0, 0 0 1 0; -fx-background-color: #b9b9b9, white; -fx-accent: #8A39BF;" />
+                <Hyperlink layoutX="271.0" layoutY="450.0" onAction="#goToLogin" text="I already have an account">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+              </children>
+          </AnchorPane>
+    </children>
+</AnchorPane>
